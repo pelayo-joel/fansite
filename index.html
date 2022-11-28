@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/61f9cf1cf0.js" crossorigin="anonymous"></script>
+        <script src="./onScrollAnimation&Audio.js"></script>
+        <link rel="stylesheet" href="fansite.css">
+        <link rel="shortcut icon" type="image/x-icon" href="Xenoblade_Chronicles.ico">
+        <title>Xenoblade Chronicles | Fansite</title>
+    </head>
+    <body>
+        <input type="radio" name="xb_bg-tab" id="xb_bg-tab_1" hidden checked/>
+        <input type="radio" name="xb_bg-tab" id="xb_bg-tab_2" hidden/>
+        <input type="radio" name="xb_bg-tab" id="xb_bg-tab_3" hidden/>
+        <input type="radio" name="xb_bg-tab" id="xb_bg-tab_X" hidden/>
+        <header>
+            <a href="https://www.nintendo.fr/"><img src="images-src/logos/nintendo-logo.png" alt="Nintendo logo"></a>
+            <nav>
+                <a href="">
+                    <span><i class="fa-solid fa-magnifying-glass"></i> Search</span>
+                </a>
+                <a href="https://store.nintendo.fr/fr">
+                    <span><i class="fa-solid fa-cart-shopping"></i> Store</span>
+                </a>
+                <a href="https://github.com/pelayo-joel">
+                    <span><i class="fa-solid fa-user"></i> Login</span>
+                </a>
+            </nav>
+        </header>
+        <div class="wrapper"></div>
+        <audio id="sample" loop></audio>
+        <main class="theme_controller">
+            <ul hidden>
+                <li><label for="xb_bg-tab_1" onclick="stop()">XB:DE</label></li>
+                <li><label for="xb_bg-tab_2" onclick="stop()">XB 2</label></li>
+                <li><label for="xb_bg-tab_3" onclick="stop()">XB 3</label></li>
+                <li><label for="xb_bg-tab_X" onclick="stop()">XB X</label></li>
+            </ul>
+            <section id="title-screen_bgm">
+                <button id="button-style" onclick="areaSample('audio-src/1-01_MainTheme.mp3')" type="button"> Title screen XB:DE</button>
+                <button id="button-style" onclick="areaSample('audio-src/2-04_WhereWeUsedToBe.mp3')" type="button"> Title screen XB 2</button>
+                <button id="button-style" onclick="areaSample('audio-src/1-01_TitleScreen.mp3')" type="button"> Title screen XB 3</button>
+                <button id="button-style" onclick="areaSample('audio-src/101_AcrosstheHorizon.mp3')" type="button"> Title screen XB X</button>
+            </section>
+            <section id="logo">
+                <img src="images-src/logos/Xenoblade-Chronicles-Logo-Download-Free-PNG.png" alt="Game Logo">
+                <img src="images-src/logos/Xenoblade_Chronicles_2_Logo.png" alt="Game Logo">
+                <img src="images-src/logos/Xeno_3_logo_blanc.png" alt="Game Logo">
+                <img src="images-src/logos/xeno_x_logo.png" alt="Game Logo">
+            </section>
+            <hr style="left=0;">
+            <section class="top-presentation reveal">
+                <article id="top-pres_desc">
+                    <a href="https://www.youtube.com/watch?v=KfjVIQug6_E&ab_channel=NintendoofAmerica">
+                        <video autoplay loop muted><source src="videos-src/trailers/XenobladeDEtrailer(cut).mp4" type="video/mp4"></video>
+                        <p>Trailer</p>
+                    </a>
+                    <div>
+                        <h2>| Story</h2>
+                        <p>"Long ago, two great titans came into existence, the Bionis and the Mechonis. The titans were locked in a timeless battle..."</p>
+                        <p>The titans now seemingly in a lifeless state since ages, their people are now fighting in the name of their gods</p>
+                        <p>Embark on a journey across these two titans and fight your enemy !</p>
+                    </div>
+                </article>
+                <article id="top-pres_desc">
+                    <a href="https://www.youtube.com/watch?v=Xjpao-nD5YU&ab_channel=NintendoofAmerica">
+                        <video autoplay loop muted><source src="videos-src/trailers/Xenoblade2trailer(cut).mp4" type="video/mp4"></video>
+                        <p>Trailer</p>
+                    </a>
+                    <div>
+                        <h2>| Story</h2>
+                        <p>"Story goes that when the world was young, everyone in Alrest lived in the world tree together with our divine father, The Architect..."</p>
+                        <p>Go on a journey in Alrest and travel across the cloud sea to the world tree to ask The Architect about this world</p>
+                    </div>
+                </article>
+                <article id="top-pres_desc">
+                    <a href="https://www.youtube.com/watch?v=t-iNpDKuYb8&ab_channel=NintendoofAmerica">
+                        <video autoplay loop muted><source src="videos-src/trailers/Xenoblade3trailer(cut).mp4" type="video/mp4"></video>
+                        <p>Trailer</p>
+                    </a>
+                    <div>
+                        <h2>| Story</h2>
+                        <p>"Fighting in order to live, and living to fight. That's the way of our world, Aionios..."</p>
+                        <p>Being a combination of the first and second game, Aionios is a world in constant war between two Nations, Agnus and Keves.</p>
+                        <p>Stop and uncover the truth behind this nonsensical war !</p>
+                    </div>
+                </article>
+                <article id="top-pres_desc">
+                    <a href="https://www.youtube.com/watch?v=m_h80NRMm9A&ab_channel=NintendoofAmerica">
+                        <video autoplay loop muted><source src="videos-src/trailers/XenobladeXtrailer(cut).mp4" type="video/mp4"></video>
+                        <p>Trailer</p>
+                    </a>
+                    <div>
+                        <h2>| Story</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicingssssssssss ssssssssssssssss sssss</p>
+                        <p>(Still not on switch bro...)</p>
+                    </div>
+                </article>
+            </section>
+            <section class="characters-section reveal">
+                <article id="char-sec_desc">
+                    <div>
+                        <h2>| Characters</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque rerum omnis in cupiditate! Aperiam mollitia dolorem nemo nihil voluptatibus?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, doloremque ratione nisi quis, adipisci molestias placeat tenetur cum cupiditate distinctio, harum modi officiis sit. Impedit quam obcaecati numquam aliquam natus!</p>
+                    </div>
+                    <img src="images-src/xenoDE-char.png" alt="Characters">
+                </article>
+                <article id="char-sec_desc">
+                    <div>
+                        <h2>| Characters</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque rerum omnis in cupiditate! Aperiam mollitia dolorem nemo nihil voluptatibus?</p>
+                    </div>
+                    <img src="images-src/xeno2-char.png" alt="Characters">
+                </article>
+                <article id="char-sec_desc">
+                    <div>
+                        <h2>| Characters</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque rerum omnis in cupiditate! Aperiam mollitia dolorem nemo nihil voluptatibus?</p>
+                    </div>
+                    <img src="images-src/xeno3-char.png" alt="Characters">
+                </article>
+                <article id="char-sec_desc">
+                    <div>
+                        <h2>| Characters</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque rerum omnis in cupiditate! Aperiam mollitia dolorem nemo nihil voluptatibus?</p>
+                    </div>
+                    <img src="images-src/xenoX-char.png" alt="Characters">
+                </article>
+            </section>
+            <hr>
+            <div id="world-sec_title" class="reveal">
+                <h2>| Bionis & Mechonis</h2>
+                <h2>| Alrest</h2>
+                <h2>| Aionios</h2>
+                <h2>| Mira</h2>
+            </div>
+            <section class="world-section reveal">
+                <h3>Notable Areas</h3>
+                <input type="radio" name="world-sec_areas" id="world-sec_areas1" hidden>
+                <input type="radio" name="world-sec_areas" id="world-sec_areas2" hidden>
+                <input type="radio" name="world-sec_areas" id="world-sec_areas3" hidden>
+                <input type="radio" name="world-sec_areas" id="world-sec_areas4" hidden>
+                <input type="radio" name="world-sec_areas" id="world-sec_areas5" hidden>
+                <article id="world-sec_desc">
+                    <div>
+                        <label for="world-sec_areas1">
+                            <video autoplay loop muted><source src="videos-src/colony9.mp4" type="video/mp4"></video>
+                            <h3>| Colony 9</h3>
+                            <p>Colony 9 is the starting point of the game. It is one of two such colonies that have not yet fallen to the Mechon. Colony 9 is where Shulk, Reyn, Dunban, and Fiora all live and grew up. It is located on the foot of the Bionis.</p>
+                            <p>The Colony is surrounded by water. The land that it does have is covered in lush grass. You'll find a variety of enemies in this area including bunny-like creatures called Bunnits, crab-like creatures called Krabbles, and many others as well.</p>
+                            <button id="button-style" onclick="areaSample('audio-src/1-06_Colony9.mp3')" type="button"> Colony 9</button>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas2"><video autoplay loop muted><source src="videos-src/gaurplains.mp4" type="video/mp4"></video>
+                            <h3>| Bionis' Leg</h3>
+                            <p>The Bionis' Leg is located on the leg of the Bionis, between Tephra Cave and Colony 6. Gaur Plains is the wide field the party will first see when they enter the Bionis' Leg.</p>
+                            <p>This massive area is consisted of two levels. It is almost comletely covered in grass. There is a huge lake on the eastern side of the lower level, which is fed by a waterfall above it on the upper level.</p>    
+                            <button id="button-style" onclick="areaSample('audio-src/2-01_GaurPlain.mp3')" type="button"> Gaur Plain</button>                  
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas3"><video autoplay loop muted><source src="videos-src/maknaforest.mp4" type="video/mp4"></video>
+                            <h3>| Makna Forest</h3>
+                            <p>Makna Forest is the warm, temperate forest that the Nopon make their home in. It lies on the Bionis' back. It is entered via the Bionis' Interior, and contains exits to Frontier Village and Valak Mountain.</p>
+                            <p>It is split in two by a great chasm, through which a fast-flowing river flows at the bottom. The river is fed by the beautiful Makna Falls, found near the forest’s entrance. It’s a huge area to explore, and there are plenty of difficult places to find.</p>
+                            <button id="button-style" onclick="areaSample('audio-src/2-16_ForestoftheNopon.mp3')" type="button"> Forest of the Nopon</button>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas4"><video autoplay loop muted><source src="videos-src/erythsea.mp4" type="video/mp4"></video>
+                            <h3>| Eryth Sea</h3>
+                            <p>The Eryth Sea is accessible through a warp from Frontier Village. It is from here that the player can access the High Entian city of Alcamoth, the High Entia Tomb, and Prison Island. There are multiple Hovering Reefs which are connected via High Entian teleportation technology.</p>
+                            <p>Sometimes at night, the weather will change to the rare shooting star effect, which is quite the spectacle if you're lucky enough to view it.</p>
+                            <button id="button-style" onclick="areaSample('audio-src/2-21_ErythSea.mp3')" type="button"> Eryth Sea</button>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas5"><video autoplay loop muted><source src="videos-src/swordvalley.mp4" type="video/mp4"></video>
+                            <h3>| Sword Valley</h3>
+                            <p>The sword of the Mechonis, which pierces the side of the Bionis. Sword Valley can be entered on foot via Valak Mountain and leads to Galahad Fortress. It was here, in Sword Valley, that the Homs made their stand against the Mechon in the Battle of Sword Valley.</p>
+                            <p>Blood from the Bionis is drawn through the sword into Galahad Fortress, located at the hilt of the sword. Large gates partition portions of the valley, but several small side passages allow the cautious to bypass the gates.</p>                        
+                            <button id="button-style" onclick="areaSample('audio-src/3-09_SwordValley.mp3')" type="button"> Sword Valley</button>
+                        </label>
+                    </div>
+                </article>
+                <article id="world-sec_desc">
+                    <div>
+                        <label for="world-sec_areas1">
+                            <img src="images-src/gormott.png" alt="Gormott">
+                            <h3>| Gormott Province</h3>
+                            <p>Gormott Province is a Nation in Xenoblade Chronicles 2. The region was once an independent nation from the Gormott Titan, but it fell under Ardainian control. This territory is home to the Gormotti people, whose main settlement is the town of Torigoth.</p>
+                            <p>Nature is abundant on Gormott, covered in lush plains and forests, and the accessible areas are affected by the movements of the Cloud Sea.</p>
+                            <button id="button-style" onclick="areaSample('audio-src/1-15_Gormott.mp3')" type="button"> Gormott</button>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas2"><img src="images-src/uraya.jpg" alt="Uraya">
+                            <h3>| Kingdom of Uraya</h3>
+                            <p>Uraya is a whale-like Titan. It is ruled by the Kingdom of Uraya from Fonsa Myma being their main city, whose territory is contained within the vast cave spreading through the Titan's body.</p>
+                            <p>The caves are lit during the day by a faint sunlight filtering through the translucent membranes on its back, and at night by bioluminescent plants.</p>                        
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas3"><img src="images-src/morardain.webp" alt="Mor Ardain">
+                            <h3>| Empire of Mor Ardain</h3>
+                            <p>It is a militaristic empire from the Titan Mor Ardain. They are led by the Emperor Niall. They control Titans through mechanical means, and bring heavy armaments as they annex other lands in a bid to save their own from ruin and depletion.</p>
+                            <p>The Empire occupies other regions of Alrest with bases such as Torigoth Relay Base in Gormott Province and the Ardainian Garrison in Temperantia. The capital of the Empire is Alba Cavanich.</p>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas4"><img src="images-src/tantal2.jpg" alt="Tantal">
+                            <h3>| Kingdom of Tantal</h3>
+                            <p>It is a force that rules from within the Titan Genbu. Little is known about Tantal and Genbu since the kingdom is an isolationist state, strictly controlling entry.</p>
+                            <p>Like Uraya, the Titan swims beneath the Cloud Sea and everything lives inside it. Its climate is far colder than other Titans and is the only Titan seen with snowfall.</p>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas5"><img src="images-src/leftheria.webp" alt="Leftheria">
+                            <h3>| Leftherian Archipeligo</h3>
+                            <p>It is actually a vast series of island Titans and small villages connected by bridges and tunnels through the Cloud Sea. This area includes Fonsett Village, where Rex our main protagonist grew up.</p>
+                            <p>The Leftherian Archipelago is not like the other nations in that it has no distinct central government. In fact, the only civilization in the Archipelago is Fonsett Village</p>                        
+                        </label>
+                    </div>
+                </article>
+                <article id="world-sec_desc">
+                    <div>
+                        <label for="world-sec_areas1">
+                            <img src="images-src/aetia.webp" alt="Aetia">
+                            <h3>| Aetia Region</h3>
+                            <p>The remains of the Gormott Province and the Bionis' Leg make up a majority of the Aetia Region. Colony 0, Colony 9, Colony Gamma, and Colony Omega are located in this region.</p>
+                            <p>Millick Meadows is where you'll see most of the remains of Gormott and the Bionis' Leg.</p>
+                            <button id="button-style" onclick="areaSample('audio-src/1-13_MillickMeadows.mp3')" type="button"> Millick Meadows</button>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas2"><img src="images-src/fornis.webp" alt="Fornis">
+                            <h3>| Fornis Region</h3>
+                            <p>The Fornis Region is made up of the remnants of the Fallen Arm and the Tornan Titan. Colony 4, Colony Iota, and Colony 30 are located in this region.</p>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas3"><img src="images-src/pentelas.jpg" alt="Pentelas">
+                            <h3>| Pentelas Region</h3>
+                            <p>The Pentelas Region is home to a dense forest with huge plants that grow amongst ruins and a giant flowing waterfall.</p>
+                            <p>The Pentelas Region is also where the Urayan Mountains, which are the remains of the Urayan Titan, are located, along with Maktha Wildwood, which is made up of the remnants of the Land of Morytha and parts of Makna Forest. Colony Lambda and Colony Tau are located in this region.</p>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas4"><img src="images-src/cadensia.jpg" alt="Cadensia">
+                            <h3>| Cadensia Region</h3>
+                            <p>The remnants of the Leftherian Archipelago, Spirit Crucible Elpys, Eryth Sea, and the Bionis' head make up the Cadensia Region. The Cadensia Region is also the location of Swordmarch.</p>
+                        </label>
+                    </div>
+                </article>
+                <article id="world-sec_desc">
+                    <div>
+                        <label for="world-sec_areas1">
+                            <img src="images-src/primodia.jpg" alt="Primordia">
+                            <h3>| Primordia</h3>
+                            <p>It is the continent where the White Whale's Habitat Unit, now New Los Angeles, crash-landed after the Ark Ship was downed by the alien faction pursuing it.</p>
+                            <p>It is the first continent visited, being where Cross is awakened by Elma in the prologue. The region features open grassy plains, large bodies of water, and several tall rock formations.</p>
+                            <button id="button-style" onclick="areaSample('audio-src/106_PrimordiatheFirstField.mp3')" type="button"> Primordia of the First Field</button>
+                    </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas2"><img src="images-src/oblivia.jpg" alt="Oblivia">
+                            <h3>| Oblivia</h3>
+                            <p>It lies to the east of Primordia. Oblivia is a dry, arid region with sparse vegetation.</p>
+                            <p> More enigmatically, it contains numerous ruins, is interwoven with gigantic metal water pipes, and hosts several colossal ring-like structures left over from a forgotten alien race that once lived in ancient Mira.</p>                        
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas3"><img src="images-src/noctilum.webp" alt="Noctilum">
+                            <h3>| Noctilum</h3>
+                            <p>It lies to the northwest of Primordia. Noctilum is very reminiscent of a jungle, with lush greenery and murky swamps.</p>
+                            <p>Much of the region is bordered by tall crags that separate it from the oceans of Mira, with some lagoons where gaps meet the ocean.</p>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas4"><img src="images-src/sylvalum.png" alt="Sylvalum">
+                            <h3>| Sylvalum</h3>
+                            <p>This region is characterized by its white sandy terrain and exotic spherical trees. It lies to the north of Primordia</p>
+                            <p>A massive glowing sphere can be seen over the southeastern part of the region. This region connects to Cauldros in the north.</p>
+                    </div>
+                    <div>
+                        <label for="world-sec_areas5"><img src="images-src/cauldros.jpg" alt="Cauldros">
+                            <h3>| Cauldros</h3>
+                            <p>Cauldros lies to the north of Sylvalum. The volcanic terrain is broken by pools of molten rock, ancient battlefields, and the ruins of an ancient city.</p>
+                            <p> Due to the hostile terrain and at times hostile weather, it is the most difficult region to explore.</p>                        
+                        </label>
+                    </div>
+                </article>
+                <input type="radio" name="world-sec_areas" id="hide_world-sec_area" hidden>
+                <label for="hide_world-sec_area"><h3 id="world-sec_foot">And many more...</h3></label>
+                <!--| Didn't add every areas OST or videos to save on memory space |-->
+                <!--| The input at the end serves as a mean to hide the focused area when clicking on 'And many more...' |-->
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <img src="images-src/smoke.png" alt="Smoke (footer background)">
+            <a href="https://www.monolithsoft.co.jp/"><img id="mono-soft" src="images-src/monolithsoft.png" alt="Monolith Soft"></a>
+            <section id="contact-form">
+                <h4>Contact us</h4>
+                <form action="" method="post">
+                    <input type="text">
+                    <input type="text">
+                    <textarea name="" id="" cols="20" rows="10"></textarea>
+                </form>
+            </section>
+            <section id="social-media">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            </section>
+        </footer>
+    </body>
+    </html>
